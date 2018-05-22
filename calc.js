@@ -36,7 +36,7 @@ function substract(calc) {
 }
 
 // ------------------------------------------ CALCULATRICE VERSION 1 ----------------------------------------------
-// version sans eval(string)
+// version avec eval(string)
 
 var calculation = Array();
 function get_calculation(calc_numbers) {
@@ -45,20 +45,13 @@ function get_calculation(calc_numbers) {
         document.getElementById("calc_result").value = calculation.join('');
     } else if (calc_numbers == '=') {
         var calc = calculation.toString().replace(/,/g,"");
-        if (calc.includes('+')) {
-            document.getElementById("calc_result").value = add(calc);
-        } else if (calc.includes('*')) {
-            document.getElementById("calc_result").value = multiply(calc);
-        } else if (calc.includes('/')) {
-            document.getElementById("calc_result").value = divide(calc);
-        } else if (calc.includes('-')) {
-            document.getElementById("calc_result").value = substract(calc);
-        }
+        document.getElementById("calc_result").value = eval(calc)
     }
 }
 
+
 // ------------------------------------------ CALCULATRICE VERSION 2 ----------------------------------------------
-// version avec eval(string)
+// version sans eval(string)
 // pour tester, mettre la version 1 en commentaire et dé commenter les lignes qui suivent : 
 
 // var calculation = Array();
@@ -68,9 +61,14 @@ function get_calculation(calc_numbers) {
 //         document.getElementById("calc_result").value = calculation.join('');
 //     } else if (calc_numbers == '=') {
 //         var calc = calculation.toString().replace(/,/g,"");
-//         document.getElementById("calc_result").value = eval(calc)
+//         if (calc.includes('+')) {
+//             document.getElementById("calc_result").value = add(calc);
+//         } else if (calc.includes('*')) {
+//             document.getElementById("calc_result").value = multiply(calc);
+//         } else if (calc.includes('/')) {
+//             document.getElementById("calc_result").value = divide(calc);
+//         } else if (calc.includes('-')) {
+//             document.getElementById("calc_result").value = substract(calc);
+//         }
 //     }
 // }
-
-
-    
