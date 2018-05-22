@@ -23,8 +23,8 @@ node exo_chauffe.js
 Pour cet exercice, il y le fichier index.html, calc.css & calc.js.
 
 Deux versions à tester : 
-- la première qui utilse les fonctions add, substract, divide et multiply. 
-- la deuxième qui utilise la fonction js eval.
+- la première qui utilse la fonction js eval.
+- la deuxième qui utilise les fonctions add, substract, divide et multiply. 
 - Les versions sont délimitées avec du commentaire dans le code, il suffit de commenter ou décommenter sur le fichier js la version à tester :).
 
 
