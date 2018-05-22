@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calc.css" />
+    </head>
+<body>
+        <div class="calculatrice">
+            <div class="result">
+                <input type="text" readonly="readonly" id="calc_result" class="calc_resultat"/>
+            </div>
+        <div class="tab">
+            <div class="calc_button"><input id="btn" type="button" value="0" onclick="get_calculation(0)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="1" onclick="get_calculation(1)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="2" onclick="get_calculation(2)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="+" onclick="get_calculation('+')"/></div>
+        </div>
+        <div class="tab">
+            <div class="calc_button"><input id="btn" type="button" value="3" onclick="get_calculation(3)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="4" onclick="get_calculation(4)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="5" onclick="get_calculation(5)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="*" onclick="get_calculation('*')"/></div>
+        </div>
+        <div class="tab">
+            <div class="calc_button"><input id="btn" type="button" value="6" onclick="get_calculation(6)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="7" onclick="get_calculation(7)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="8" onclick="get_calculation(8)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="-" onclick="get_calculation('-')"/></div>
+        </div>
+        <div class="tab">
+            <div class="calc_button"><input id="btn" type="button" value="9" onclick="get_calculation(9)"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="/" onclick="get_calculation('/')"/></div>
+            <div class="calc_button"><input id="btn" type="button" value="clear" onclick='location.reload()'/></div>
+            <div class="calc_button"><input id="btn" type="button" value="=" onclick="get_calculation('=')"/></div>
+        </div>
+<script src="calc.js"></script>
+</body>
+</html>
